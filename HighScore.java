@@ -4,6 +4,7 @@ public class HighScore {
 
         int[] randomNumbers = {randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber(), randomNumber()};
         int highScore = 0;
+        int seat = 0;
 
         System.out.print("Here are the scores: ");
 
@@ -17,7 +18,15 @@ public class HighScore {
             }
         }
 
-        System.out.println("\nThe highest score is " +highScore+ ". Give that man a cookie!");
+        for(int i=0; i<randomNumbers.length; i++){
+            if(highScore == randomNumbers[i]){
+                seat = i;
+            }
+        }
+
+        System.out.println("\nThe highest score is " +highScore+ ". Impressive!");
+        System.out.println("It's the gentlemen in seat: " +seat+ ". Give that man a cookie!");
+        
         
     }
 
