@@ -18,6 +18,8 @@ public class Grocer {
                 System.out.println("\nWe have that in aisle: " + i);
             }
         }
+
+        scan.close();
         
     }
 

@@ -21,6 +21,8 @@ public class PizzaDelivery {
         for(int i=0; i<toppings.length; i++){
             System.out.println(i + ". " + toppings[i]);
         }
+
+        scan.close();
     }
     
 }
